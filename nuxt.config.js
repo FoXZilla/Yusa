@@ -25,7 +25,7 @@ module.exports = {
       `http://${host}:${port}`
   },
   head: {
-    title: "tt1",
+    title: "FireFront/Tomori",
     meta: [
       { charset: "utf-8" },
       {
@@ -54,7 +54,7 @@ module.exports = {
   /*
   ** Build configuration
   */
-  css: ["~/assets/css/main.css"],
+  css: [],
   build: {},
   modules: [
     "@nuxtjs/axios",
