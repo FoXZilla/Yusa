@@ -1,23 +1,44 @@
 {
   "name": "tomori",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@foxzilla/fireblog": "0.0.1-alpha.26",
+    "@foxzilla/fireblog-sdk": "0.0.1-alpha.5",
     "@nuxtjs/axios": "^5.0.0",
-    "nuxt": "^1.3.0",
+    "@pea3nut/scripts": "0.0.1",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.1.1",
+    "cookie": "^0.3.1",
+    "cross-env": "^5.1.4",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "marked": "^0.3.18",
+    "nuxt": "^1.4.0",
+    "tinytime": "^0.2.6",
+    "url-search-params": "^0.10.0",
     "vue": "^2.5.16",
-    "vue-class-component": "^6.2.0",
-    "vuex-class": "^0.3.0"
+    "vue-i18n": "^7.6.0",
+    "vue-notification": "^1.3.7"
   },
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cross-env NODE_TLS_REJECT_UNAUTHORIZED=0 FIREFRONT=localhost:3003 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
   },
   "devDependencies": {
+    "@pea3nut/styles": "0.0.1",
+    "@types/axios": "^0.14.0",
+    "@types/bootstrap": "^4.1.0",
+    "@types/jquery": "^3.3.1",
     "@types/node": "^9.4.6",
+    "node-sass": "^4.8.3",
+    "nuxt-class-component": "^1.2.0",
+    "sass-loader": "^6.0.7",
     "ts-loader": "^3.5.0",
-    "typescript": "^2.7.2"
+    "typescript": "^2.7.2",
+    "vue-class-component": "^6.2.0",
+    "vuex-class": "^0.3.0"
   }
 }

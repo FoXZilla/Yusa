@@ -1,0 +1,31 @@
+body{
+  background-color: #434343;
+  background-image: url("//public.pea3nut.org/img/uchu01.bg.jpg");
+  color :#323435;
+}
+a{
+  color :#de5e60;
+  &:hover{
+    color : #9c4041;
+  }
+}
+#main{
+  .container{
+    max-width :780px;
+  }
+  .pull-right{
+    float :right;
+  }
+  .pull-left{
+    float :left;
+  }
+  .blog-main{
+    min-height: 100vh;
+  }
+}
+.clickable{
+  cursor: pointer;
+}
+img[width] ,img[height]{
+  display: inline-block;
+}
