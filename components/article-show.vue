@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <div class="text-body" v-html="md(articleInfo.md_content)"></div>
+                <div class="text-body" v-html="fixImgPath(md(articleInfo.md_content))"></div>
             </div>
             <div class="card-footer text-muted">
                 <div class="asb-label-group" v-if="articleInfo.no_comment">
@@ -309,6 +309,10 @@ export default class extends Vue {
         this.commentContent =`[@${info.nickname}](/_firebean?${new URLSearchParams(<any>fbData)}) `+this.commentContent;
     };
     inPreview =false;
+
+    fixImgPath(htmlStr){
+        return htmlStr.replace(/(<img[^>]*src=")\//img,`$1${this.fireApiUrl}/`);
+    };
 }
 </script>
 
